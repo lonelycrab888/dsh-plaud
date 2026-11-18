@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plaud 会议录音",
+    "description": "通过官方 Plaud MCP 查找录音、读取转录和已有纪要，并生成带时间戳的 Markdown 会议纪要。在设置的 Plaud 页面打开登录窗口，再在浏览器完成授权。"
+  }
+}

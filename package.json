@@ -1,0 +1,53 @@
+{
+  "name": "dsh-plaud",
+  "version": "0.1.1",
+  "description": "Connect Plaud recordings to DeepSeek Harness and draft timestamped meeting notes.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json",
+    "./client": "./client.cjs"
+  },
+  "files": [
+    "index.js",
+    "account.js",
+    "settings-route.js",
+    "client.cjs",
+    "cordis.patch.yml",
+    "locale",
+    "icon.svg",
+    "skills",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.2": "compatible"
+      }
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  },
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "scripts": {
+    "test": "node --test",
+    "pack:release": "mkdir -p dist && npm pack --pack-destination dist"
+  },
+  "dependencies": {
+    "@plaud-ai/mcp": "0.3.14"
+  },
+  "bundleDependencies": [
+    "@plaud-ai/mcp"
+  ]
+}
