@@ -1,6 +1,6 @@
 {
   "name": "dsh-plaud",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Connect Plaud recordings to DeepSeek Harness and draft timestamped meeting notes.",
   "type": "module",
   "exports": {
@@ -38,7 +38,8 @@
     }
   },
   "engines": {
-    "node": "^22.19.0 || >=24.0.0"
+    "node": "^22.19.0 || >=24.0.0",
+    "dsh": ">=0.2.2-rc.2"
   },
   "scripts": {
     "test": "node --test",

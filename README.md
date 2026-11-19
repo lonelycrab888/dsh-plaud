@@ -4,17 +4,17 @@
 
 ## 安装
 
-在 DeepSeek Harness Web 0.2.2-rc.2 上完成了端到端验证。桌面端可用下列入口安装。账号需要开启 Plaud Cloud Sync。安装时会从 npm 下载固定版本的官方 Plaud MCP 和运行依赖。[Plaud Cloud Sync 说明](https://support.plaud.ai/hc/en-us/articles/57751078986265-Plaud-MCP)
+需要 DeepSeek Harness 0.2.2-rc.2 或更新版本，已在 Web 0.2.2-rc.2 上验证。桌面端可用下列入口安装。账号需要开启 Plaud Cloud Sync。安装时会从 npm 下载固定版本的官方 Plaud MCP 和运行依赖。[Plaud Cloud Sync 说明](https://support.plaud.ai/hc/en-us/articles/57751078986265-Plaud-MCP)
 
-- 桌面端打开 **插件 → 添加插件**，选择 npm 官方源，输入 `dsh-plaud@0.1.1` 并启用。也可以填写安装包地址 `file:/安装包的绝对路径/dsh-plaud-0.1.1.tgz`。
+- 桌面端打开 **插件 → 添加插件**，选择 npm 官方源，输入 `dsh-plaud@0.1.2` 并启用。也可以填写安装包地址 `file:/安装包的绝对路径/dsh-plaud-0.1.2.tgz`。
 - Web CLI 使用以下命令安装 npm 版本，随后启动或重启对应 profile。
 
 ```sh
-dsh plugin --profile web add dsh-plaud@0.1.1 --ignore-scripts
+dsh plugin --profile web add dsh-plaud@0.1.2 --ignore-scripts
 dsh web
 ```
 
-如果使用 GitHub Release 的安装包，将命令里的 `dsh-plaud@0.1.1` 换为 `.tgz` 的绝对路径。
+如果使用 GitHub Release 的安装包，将命令里的 `dsh-plaud@0.1.2` 换为 `.tgz` 的绝对路径。
 
 如果已手动配置了同名 `plaud` MCP 服务器，在同一 profile 中保留一个入口即可。
 
@@ -46,4 +46,4 @@ npm ci --ignore-scripts
 npm run pack:release
 ```
 
-安装包位于 `dist/dsh-plaud-0.1.1.tgz`。[Plaud MCP 官方文档](https://docs.plaud.ai/plaud-mcp-cli/mcp)
+安装包位于 `dist/dsh-plaud-0.1.2.tgz`。[Plaud MCP 官方文档](https://docs.plaud.ai/plaud-mcp-cli/mcp)
